@@ -1,0 +1,509 @@
+/* Reset minimal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Courier New", monospace;
+  background-image: url('images/fond-nuages-moches-new.png');
+  background-repeat: repeat;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  padding: 80px 10px; /* marges haut/bas pour barres fixes */
+}
+ 
+/* Conteneur centré */
+.container {
+  width: 100%;
+  max-width: 900px; /* limite max type A4 */
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+ 
+/* Feuille A4 responsive */
+.page-a4 {
+  width: 100%;
+  aspect-ratio: 210 / 400; /* format A4 proportionnel */
+  background-color: rgb(255, 249, 253);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+}
+ 
+.banniere2 {
+  position: relative;
+  width: 100%;
+  top: -13%;
+  height: 5%;
+  z-index: 2;
+   background-color: rgba(245, 149, 255);
+}
+ 
+/* --- Bannière --- */
+.banniere {
+  position: relative;
+  width: 100%;
+  top: 4%;
+  z-index: 1;
+}
+ 
+.banniere-fond {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+ 
+/* --- Titre principal --- */
+.pixel-title {
+  position: absolute;
+  top: 8%;        /* 50% de la hauteur du parent */
+  left: 42%;       /* 10% du parent */
+  transform: translateY(-50%); /* recentrer verticalement */
+  font-family: "Pixelify Sans", sans-serif;
+  font-size:  clamp(1.1rem, 2.8vw, 1.6rem);
+  font-weight: 700;
+  color: white;
+  max-width: 100%;
+  z-index: 10;
+  text-align: left; /* ou center si tu préfères */
+}
+ 
+.pixel-title2 {
+  position: absolute;
+  top: 12.5%;        /* 50% de la hauteur du parent */
+  left: 42%;       /* 10% du parent */
+  transform: translateY(-50%); /* recentrer verticalement */
+  font-family: "Pixelify Sans", sans-serif;
+  font-size:  clamp(1rem, 2.4vw, 1.4rem);
+  font-weight: 700;
+  color: white;
+  width: 50%;
+  max-width: 70%;
+  z-index: 10;
+  text-align: left; /* ou center si tu préfères */
+}
+ 
+/* --- GIF noeuds --- */
+.gif-noeuds {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;*/
+  height: auto;
+  z-index: 5;
+}
+ 
+/* --- Cercle neko --- */
+.cercle-neko {
+  position: absolute;
+  top: 7.5%;
+  left: 8%;
+  width: 28.7%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 6;
+}
+ 
+/* --- Cadre neko --- */
+.cadre-neko {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  width: 35%;
+  height: auto;
+  z-index: 7;
+}
+ 
+.logo {
+  position: absolute;
+  top: 7.3%;
+  left: 3%;
+  width: 40%;
+  height: auto;
+  z-index: 10;
+}
+ 
+.window-contact {
+  position: absolute;
+  top: 21%;
+  left: 44%;
+  width: 27%;
+  height: auto;
+  z-index: 10;
+}
+ 
+.window-mobilite {
+  position: absolute;
+  top: 21%;
+  left: 72%;
+  width: 27%;
+  height: auto;
+  z-index: 10;
+}
+ 
+.pixel-nom {
+  position: absolute;
+  top: 28%;        /* 50% de la hauteur du parent */
+  left: 21%;       /* 10% du parent */
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: clamp(1.4rem, 3.5vw, 2.1rem) !important;
+  font-weight: 700;
+  color: white;
+  /*background-color: red; */
+  width: 20%;
+  max-width: 200%;
+  z-index: 10;
+  text-align: left; /* ou center si tu préfères */
+}
+ 
+ 
+/* Bannière
+.banniere {
+  position: relative;
+  width: 100%;
+  top:4%;
+}
+ 
+.banniere-fond {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+ 
+.banniere-contenu {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+ 
+.pixel-title {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: clamp(1rem, 3vw, 2rem); /* taille responsive
+  font-weight: 700;
+  color: white;
+  margin: 0 auto;
+  max-width: 80%;
+}
+ 
+.gif-noeuds {
+  position: absolute;
+  top: -500%;
+  left: 50%;
+  margin-top: 1rem;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+}
+ 
+/* Exemple cercle + cadre neko
+.cercle-neko {
+  position: absolute;
+  top: -979%;
+  left: 8%;
+  width: 29%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+}
+ 
+.cadre-neko {
+  position: absolute;
+  top: -1000%;
+  left: 5%;
+  width: 35%;
+  height: auto;
+} */
+ 
+/* Contenu principal */
+.contenu-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes */
+  gap: 2rem;
+  margin-top: 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  color: black;
+}
+ 
+.contenu-page h1 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+ 
+.text-right {
+     width: 50%;
+  left: 14%;
+  position: absolute;
+  z-index: 3;
+  color: black;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+}
+ 
+.text-right-right {
+   width: 50%;
+  left: 46%;
+  position: absolute;
+  z-index: 3;
+  color: black;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+}
+ 
+ .text-column {
+  top: 34%;
+ /* font-size: 13px;*/
+}
+ 
+ .text-column2 {
+  top: 75%;
+ /* font-size: 13px;*/
+}
+ 
+ 
+.text-left {
+     width: 50%;
+  left: 1%;
+  position: absolute;
+  z-index: 3;
+  color: black;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+}
+ 
+.text1-right {
+   top: 40.5%;
+}
+ 
+.text1-left {
+   top: 47%;
+}
+ 
+.text2-right {
+   top: 57.5%;
+}
+ 
+.text2-left {
+   top: 64%;
+}
+ 
+.text3-right {
+   top: 71.5%;
+}
+ 
+.text3-left {
+   top: 78%;
+}
+ 
+.text4-right {
+   top: 85.5%;
+}
+ 
+ 
+ .text-orange {
+  color: rgba(255, 125, 0);
+}
+ 
+ .text-bleu {
+  color: rgba(0, 132, 255);
+}
+ 
+ .text-rouge {
+  color: rgba(255, 0, 0);
+}
+ 
+.text-mikucolor {
+  color: rgba(18, 211, 163);
+}
+ 
+.text-vert {
+  color: rgba(4, 181, 71);
+}
+ 
+.text-rose {
+  color: rgba(241, 77, 216);
+}
+ 
+.text-violet {
+  color: rgba(151, 38, 204);
+}
+ 
+ 
+ 
+/* Exemple de bloc coloré */
+.rectangle-nom {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 34%;
+    height: 11%;
+  background-color: rgba(243, 164, 216);
+  border-radius: 1.25rem;
+  border: 0.1em solid rgba(234, 97, 187);
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+ 
+.fond-rectangle-nom {
+  position: absolute;
+    top: -10%;
+    left: -10%;
+  width: 55%;
+  height: 150%;
+  object-fit: cover;  
+  display: block;
+ background-color: rgba(254, 242, 242);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+ 
+.fond-rectangle-nom img {
+  position: absolute;
+  top: 7%;
+    left: -44%;
+ width: auto;
+  height: 160%;
+  object-fit: cover;  
+  display: block;
+}
+ 
+/* Petits carrés
+.carre {
+  width: 20%;
+  aspect-ratio: 1/1;
+  background-color: rgba(234, 97, 187);
+  margin: 1rem auto;
+}*/
+ 
+ .carre {
+  position: absolute;
+  left: 2%;
+  width: 11%;
+  height: 6%;
+  background-color: white;
+  border: 0.2em solid rgba(234, 97, 187);
+  overflow: hidden;
+}
+ 
+.carre1 {
+  top: 41%;
+}
+ 
+.carre1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+}
+ 
+ 
+.carre2 {
+  top: 58%;
+}
+ 
+.carre2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+}
+ 
+ 
+.carre3 {
+  top: 72%;
+}
+ 
+.carre3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+}
+ 
+.carre4 {
+  top: 86%;
+}
+ 
+.carre4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+}
+ 
+/* 🌟 Barre cupcake de séparation */
+.separateur {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+width: auto !important;
+height: 70% !important;
+   z-index: 10;
+}
+ 
+.banniere-etoile {
+position: absolute;
+  top: 68%;
+  left: 46%;
+width: 51%;
+height: auto;
+   z-index: 10;
+}
+ 
+/* Barres fixes (haut & bas) */
+.barre-haut,
+.barre-bas {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+ 
+.barre-haut { top: 0; }
+.barre-bas { bottom: 0; }
+ 
+.barre-haut img,
+.barre-bas img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+ 
+/* 🌍 Responsive : une seule colonne sur mobile */
+@media (max-width: 768px) {
+  .contenu-page {
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 1rem;
+  }
+}
+ 
+ /* .pixel-title {
+    font-size: 1.2rem;
+  }
+ 
+  .gif-noeuds {
+    width: 100%;
+  }
+ 
+  .cercle-neko,
+  .cadre-neko {
+    width: 50%;
+    left: 25%;
+  }
+}/*
