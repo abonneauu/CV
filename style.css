@@ -387,7 +387,7 @@ height: 70% !important;
  
 .banniere-etoile {
 position: absolute;
-  top: 75%;
+  top: 65%;
   left: 46%;
 width: 51%;
 height: auto;
@@ -420,4 +420,5 @@ height: auto;
   }
 }
  
+
 
