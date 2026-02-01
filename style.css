@@ -149,7 +149,7 @@ body {
   width: 8%;
   height: 1%;;
   z-index: 9;
- background-color: red;
+ background-color: rgba(2, 0, 161);
 }
 
 .contact {
@@ -180,7 +180,7 @@ top: 21.25%;
   width: 8%;
   height: 1%;;
   z-index: 9;
- background-color: red;
+ background-color: rgba(2, 0, 161);
 }
 
 .adresses {
@@ -464,6 +464,7 @@ height: auto;
   }
 }
  
+
 
 
 
