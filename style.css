@@ -144,12 +144,12 @@ body {
 
 .carre-contact {
   position: absolute;
-   top: 21.3%;
+  top: 21.3%;
   left: 44.5%;
   width: 8%;
   height: 1%;;
   z-index: 9;
- background-color: rgba(2, 0, 161);
+ background-color: red;
 }
 
 .contact {
@@ -180,7 +180,7 @@ top: 21.25%;
   width: 8%;
   height: 1%;;
   z-index: 9;
- background-color: rgba(2, 0, 161);
+ background-color: red;
 }
 
 .adresses {
@@ -464,6 +464,7 @@ height: auto;
   }
 }
  
+
 
 
 
