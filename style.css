@@ -147,7 +147,7 @@ body {
   top: 21.3%;
   left: 44.5%;
   width: 8%;
-  height: 1%;;
+  height: 1%;
   z-index: 9;
  background-color: rgba(2, 0, 161);
 }
@@ -178,7 +178,7 @@ top: 21.25%;
   top: 21.3%;
   left: 72.5%;
   width: 8%;
-  height: 1%;;
+  height: 1%;
   z-index: 9;
  background-color: rgba(2, 0, 161);
 }
@@ -464,6 +464,7 @@ height: auto;
   }
 }
  
+
 
 
 
