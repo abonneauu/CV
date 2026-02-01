@@ -141,6 +141,28 @@ body {
   height: auto;
   z-index: 10;
 }
+
+.carre-contact {
+  position: absolute;
+   top: 21.3%;
+  left: 44.5%;
+  width: 8%;
+  height: 1%;;
+  z-index: 9;
+ background-color: rgba(2, 0, 161);
+}
+
+.contact {
+  position: absolute;
+top: 21.25%;
+  left: 44.8%;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+  width: 50%;
+  height: auto;
+  z-index: 10;
+  color: white;
+}
  
 .window-mobilite {
   position: absolute;
@@ -149,6 +171,28 @@ body {
   width: 27%;
   height: auto;
   z-index: 10;
+}
+
+.carre-mobilite {
+  position: absolute;
+  top: 21.3%;
+  left: 72.5%;
+  width: 8%;
+  height: 1%;;
+  z-index: 9;
+ background-color: rgba(2, 0, 161);
+}
+
+.adresses {
+  position: absolute;
+ top: 21.2%;
+  left: 72.8%;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+  width: 50%;
+  height: auto;
+  z-index: 10;
+  color: white;
 }
  
 .pixel-nom {
@@ -420,6 +464,7 @@ height: auto;
   }
 }
  
+
 
 
 
